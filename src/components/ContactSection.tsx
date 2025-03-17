@@ -11,29 +11,89 @@ const ContactSection = () => {
   });
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    // Clear error for the field being edited
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validateForm = () => {
+    const newErrors = {
+      name: "",
+      email: "",
+      message: "",
+    };
+    let isValid = true;
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real implementation, you would send the form data to a server
-    console.log('Form submitted:', formData);
-    
-    // Show success message
-    toast({
-      title: "Message sent",
-      description: "Thank you! I'll get back to you as soon as possible.",
-    });
-    
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+
+    // Validate form before submission
+    if (!validateForm()) {
+      return;
+    }
+
+    try {
+      const response = await fetch("https://formspree.io/f/xgvavllp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent",
+          description: "Thank you! I'll get back to you as soon as possible.",
+        });
+
+        // Reset form
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+      });
+    }
   };
 
   return (
@@ -77,7 +137,7 @@ const ContactSection = () => {
                   </svg>
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:john.doe@example.com" className="text-muted-foreground hover:text-primary">
+                    <a href="mailto:suyashsingh.raebareli@gmail.com" className="text-muted-foreground hover:text-primary">
                       suyashsingh.raebareli@gmail.com
                     </a>
                   </div>
@@ -134,7 +194,7 @@ const ContactSection = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-semibold mb-4">Connect</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
+                  <a href="https://github.com/blinderchief" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -151,7 +211,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                   
-                  <a href="#" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
+                  <a href="https://www.linkedin.com/in/suyash-kumar-singh/" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -169,7 +229,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                   
-                  <a href="#" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
+                  <a href="" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"

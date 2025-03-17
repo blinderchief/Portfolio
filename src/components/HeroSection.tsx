@@ -46,7 +46,7 @@ const HeroSection = () => {
         <div className="flex flex-col items-start max-w-5xl mx-auto">
           <div className="text-reveal-container mb-3">
             <span className="inline-block py-1 px-3 text-sm font-medium text-primary/80 border border-primary/10 rounded-full text-reveal animate-on-scroll">
-              CP & Data Science & AI-ML
+              CP, Data Science & AI-ML
             </span>
           </div>
           
@@ -60,7 +60,7 @@ const HeroSection = () => {
             <div className="flex items-center">
               <div className="h-px w-16 bg-primary/20 mr-4"></div>
               <h2 className="text-xl md:text-2xl text-primary/80 font-light text-reveal animate-on-scroll reveal-2">
-                Competitve Programmer, Data Scientist & AI-ML Student 
+                Competitve Programmer, Data Science & AI-ML Student 
               </h2>
             </div>
           </div>

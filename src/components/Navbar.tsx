@@ -40,7 +40,7 @@ const Navbar = () => {
     >
       <div className="container flex justify-between items-center">
         <a href="#" className="font-playfair text-xl font-medium">
-          SK<span className="text-primary/80">Singh</span>
+          blinder<span className="text-primary/80">chief</span>
         </a>
         
         <div className="hidden md:flex space-x-8">
@@ -73,7 +73,7 @@ const Navbar = () => {
         <div className="container h-full flex flex-col py-6">
           <div className="flex justify-between items-center">
             <a href="#" className="font-playfair text-xl font-medium">
-              SK<span className="text-primary/80">Singh</span>
+              blinder<span className="text-primary/80">chief</span>
             </a>
             <button 
               className="p-2 text-foreground/80 hover:text-foreground transition-colors"

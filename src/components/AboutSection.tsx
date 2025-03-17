@@ -28,19 +28,20 @@ const AboutSection = () => {
               )}
               style={{ animationDelay: '0.2s' }}>
                 <p className="text-muted-foreground leading-relaxed">
-                  Hi, I'm John Doe. I'm a passionate frontend developer with over 5 years of experience building 
-                  exceptional digital experiences. I focus on creating intuitive and beautiful user interfaces 
-                  that are accessible to everyone.
+                  Hi, I'm Suyash Kumar Singh. I'm a passionate Data Science and AI student with a strong foundation in data analysis, machine learning, and software development.
+                  Proficient in programming languages like Python, R, and C++, and experienced in leveraging tools like Pandas, NumPy, and Scikit-learn for data-driven insights. 
+                  Adept at working in teams, managing time efficiently, and solving complex problems. Actively participating in coding competitions and passionate about building 
+                  innovative solutions using AI/ML to address real-world challenges.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
-                  My journey in web development started when I was in college, and I've been hooked ever since. 
+                  My journey in Machine Learning started in college(IIT Guwahati), and I've been hooked ever since. 
                   I'm constantly learning and improving my skills to stay at the forefront of web technologies.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
                   When I'm not coding, you can find me hiking in the mountains, reading a good book, or 
-                  experimenting with new recipes in the kitchen.
+                  Singing and Listening Songs.
                 </p>
               </div>
               

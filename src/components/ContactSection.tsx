@@ -125,7 +125,7 @@ const ContactSection = () => {
                   <div>
                     <p className="font-medium">Location</p>
                     <p className="text-muted-foreground">
-                      WhiteField Bengaluru, India 
+                     Whitefield, Bangalore, India 
                     </p>
                   </div>
                 </div>

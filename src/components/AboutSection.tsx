@@ -35,7 +35,7 @@ const AboutSection = () => {
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
-                  My journey in Machine Learning started in college(IIT Guwahati), and I've been hooked ever since. 
+                  My journey in Machine Learning started in College(IIT Guwahati), and I've been hooked ever since. 
                   I'm constantly learning and improving my skills to stay at the forefront of web technologies.
                 </p>
                 
@@ -82,8 +82,10 @@ const AboutSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
               </div>
               <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                {/* Here you would typically place an image */}
-                <span className="text-lg">Profile Image</span>
+              <img
+                  src="/copy-modified.png" 
+                     alt="Profile"
+                    className="h-full w-full object-cover"/>
               </div>
             </div>
           </div>

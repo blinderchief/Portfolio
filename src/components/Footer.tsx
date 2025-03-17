@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container px-6">
         <div className="flex flex-col items-center justify-center">
           <a href="#" className="font-playfair text-2xl font-medium mb-8">
-            SK<span className="text-primary/80">Singh</span>
+            blinder<span className="text-primary/80">chief</span>
           </a>
           
           <div className="flex flex-wrap justify-center gap-8 mb-10">
@@ -22,16 +22,16 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-6 mb-10">
-            <a href="mailto:mail-to" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
+            <a href="mailto:suyashsingh.raebareli@gmail.com" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
               <Mail size={18} className="text-primary/70" />
             </a>
-            <a href="https://github.com" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
+            <a href="https://github.com/blinderchief" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
               <Github size={18} className="text-primary/70" />
             </a>
-            <a href="https://linkedin.com" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
+            <a href="https://www.linkedin.com/in/suyash-kumar-singh/" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
               <Linkedin size={18} className="text-primary/70" />
             </a>
-            <a href="https://codeforces.com" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
+            <a href="https://codeforces.com/profile/blinderchief" className="p-2 rounded-full border border-primary/10 hover:bg-primary/5 transition-colors duration-200">
               <Code size={18} className="text-primary/70" />
             </a>
           </div>

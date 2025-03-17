@@ -229,7 +229,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                   
-                  <a href="" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
+                  <a href="https://x.com/blinderchief_" className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"

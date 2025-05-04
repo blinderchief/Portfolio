@@ -12,36 +12,20 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: "Tech Innovations Inc.",
-    position: "Senior Frontend Developer",
-    period: "Jan 2021 - Present",
+    company: "College Programs & Competitive Programming",
+    position: "Competitive Programmer",
+    period: "2024 - Present",
     description: [
-      "Led the development of the company's design system, improving development speed by 35%",
-      "Architected and implemented a new React-based frontend for the flagship product",
-      "Mentored junior developers and conducted code reviews to ensure high code quality",
-      "Collaborated with UX designers to improve user experience across all products"
+      "Actively involved in coding competitions and events like Vishwas Diwas, applying algorithmic problem-solving skills",
+      "Participating in the 2024-2025 ICPC online round, collaborating with peers to solve complex algorithmic challenges"
     ]
   },
   {
-    company: "Digital Solutions LLC",
-    position: "Frontend Developer",
-    period: "Mar 2019 - Dec 2020",
+    company: "SSB of Indian Army and Navy",
+    position: "Selection Process Participant",
+    period: "2022 - 2023",
     description: [
-      "Developed responsive web applications using React and TypeScript",
-      "Implemented CI/CD pipelines reducing deployment time by 40%",
-      "Optimized application performance resulting in 25% faster load times",
-      "Integrated RESTful APIs and implemented state management with Redux"
-    ]
-  },
-  {
-    company: "WebTech Startup",
-    position: "Junior Developer",
-    period: "Jun 2017 - Feb 2019",
-    description: [
-      "Built interactive UI components for the company's main SaaS product",
-      "Worked on bug fixes and feature improvements for existing applications",
-      "Participated in daily stand-ups and sprint planning meetings",
-      "Assisted in migrating legacy code to modern JavaScript frameworks"
+      "Gained skills in leadership, responsibility management, and quick decision-making through participation in selection processes"
     ]
   }
 ];
@@ -60,12 +44,11 @@ const ExperienceSection = () => {
             "text-center mb-16 opacity-0",
             inView && "animate-fade-in"
           )}>
-            <h2 className="section-title">Work Experience</h2>
+            <h2 className="section-title">Experience</h2>
             <p className="section-subtitle mx-auto">
               My professional journey and the companies I've had the pleasure to work with.
             </p>
           </div>
-          
           <div className="space-y-12">
             {experiences.map((job, index) => (
               <div 
@@ -119,3 +102,4 @@ const ExperienceSection = () => {
 };
 
 export default ExperienceSection;
+

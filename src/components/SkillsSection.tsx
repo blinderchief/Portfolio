@@ -10,31 +10,35 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Frontend",
+    title: "Programming Languages",
     skills: [
-      "React", "TypeScript", "JavaScript", "HTML", "CSS/SCSS", 
-      "Tailwind CSS", "Redux", "Next.js", "Webpack"
+      "Python", "C++", "Java", "JavaScript", "R"
     ]
   },
   {
-    title: "Backend",
+    title: "Database Management",
     skills: [
-      "Node.js", "Express", "RESTful APIs", "GraphQL", 
-      "Firebase", "MongoDB"
+      "MySQL", "SQL", "MongoDB", "Supabase"
     ]
   },
   {
-    title: "Tools & Platforms",
+    title: "Machine Learning & AI",
     skills: [
-      "Git", "GitHub", "VS Code", "Docker", "AWS", 
-      "Netlify", "Vercel", "CI/CD", "Jest"
+      "TensorFlow", "Scikit-learn", "Neural Networks", "NLP", 
+      "Deep Learning", "PyTorch", "Streamlit", "Transformers", "BERT"
     ]
   },
   {
-    title: "Design & Other",
+    title: "Data Science & Tools",
     skills: [
-      "Figma", "Adobe XD", "Responsive Design", "UI/UX Principles", 
-      "Accessibility", "Performance Optimization"
+      "DSA", "Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn", 
+      "EDA", "ETL", "Git", "GitHub", "OpenCV", "NetworkX"
+    ]
+  },
+  {
+    title: "Web Development",
+    skills: [
+      "HTML", "CSS", "Django", "JavaScript","APIs"
     ]
   }
 ];
@@ -65,13 +69,14 @@ const SkillsSection = () => {
                 key={index}
                 className={cn(
                   "bg-background rounded-xl p-6 md:p-8 shadow-sm border border-border/50 opacity-0",
-                  inView && "animate-fade-in"
+                  inView && "animate-fade-in",
+                  category.title === "Web Development" ? "col-span-1 md:col-span-2 mx-auto max-w-xl" : ""
                 )}
                 style={{ animationDelay: `${0.2 + index * 0.1}s` }}
               >
-                <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">{category.title}</h3>
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                   {category.skills.map((skill, i) => (
                     <span 
                       key={i}
@@ -91,3 +96,5 @@ const SkillsSection = () => {
 };
 
 export default SkillsSection;
+
+

@@ -28,20 +28,21 @@ const AboutSection = () => {
               )}
               style={{ animationDelay: '0.2s' }}>
                 <p className="text-muted-foreground leading-relaxed">
-                  Hi, I'm Suyash Kumar Singh. I'm a passionate Data Science and AI student with a strong foundation in data analysis, machine learning, and software development.
-                  Proficient in programming languages like Python, R, and C++, and experienced in leveraging tools like Pandas, NumPy, and Scikit-learn for data-driven insights. 
-                  Adept at working in teams, managing time efficiently, and solving complex problems. Actively participating in coding competitions and passionate about building 
-                  innovative solutions using AI/ML to address real-world challenges.
+                Hello, I'm Suyash Kumar Singh, a dedicated Data Science and AI student at IIT Guwahati, passionate about solving real-world challenges through innovative AI/ML solutions. 
+                I specialize in data analysis, machine learning, and software development, with proficiency in Python, R, C++, and tools like Pandas, NumPy, TensorFlow, and Scikit-learn.
+                My academic journey at IIT Guwahati has fueled my expertise, leading to impactful projects like a Multimodal Fake News Detection System, Sentiment Analysis of Political Tweets, 
+                and an AI-Powered Health & Fitness App (BLINDERFIT), showcasing my ability to integrate advanced AI techniques with practical applications.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
-                  My journey in Machine Learning started in College(IIT Guwahati), and I've been hooked ever since. 
-                  I'm constantly learning and improving my skills to stay at the forefront of web technologies.
+                I’m a competitive programmer with a CodeForces Max Rating of 1276 (Pupil Title) and a CodeChef Max Rating of 1855 (3-star Coder), having solved over 500 problems.
+                My experience includes actively participating in coding competitions like Vishwa Das Diwas and the 2024-2025 ICPC online round, as well as contributing to the SSB of the Indian Army and Navy, where I honed my leadership, responsibility, and quick decision-making skills. 
+                I thrive in collaborative environments and am committed to staying at the forefront of technology through continuous learning.
                 </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
-                  When I'm not coding, you can find me hiking in the mountains, reading a good book, or 
-                  Singing and Listening Songs.
+                When I’m not coding, I find inspiration in hiking the mountains, reading thought-provoking books, or singing and listening to music, which keep me grounded and fuel my creativity.
+                I’m eager to connect and explore opportunities to build transformative solutions that make a meaningful impact.
                 </p>
               </div>
               
@@ -75,7 +76,7 @@ const AboutSection = () => {
             </div>
             
             <div className={cn(
-              "relative h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden opacity-0",
+                 "relative h-78 md:h-96 lg:h-[40rem] rounded-xl overflow-hidden opacity-0",
               inView && "animate-fade-in-right"
             )} style={{ animationDelay: '0.3s' }}>
               <div className="glass absolute inset-0 rounded-xl">

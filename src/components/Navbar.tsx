@@ -40,7 +40,7 @@ const Navbar = () => {
     >
       <div className="container flex justify-between items-center">
         <a href="#" className="font-playfair text-xl font-medium">
-          blinder<span className="text-primary/80">chief</span>
+          blinderchief
         </a>
         
         <div className="hidden md:flex space-x-8">

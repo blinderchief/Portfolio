@@ -58,7 +58,7 @@ const ProjectsSection = () => {
               let imagePath = `/project-${index + 1}.jpg`;
               if (project.title === "Multimodal Fake News Detection System") {
                 imagePath = "/multimodalfake.png";
-              } else if (project.title === "AI-Powered Health & Fitness App (BLINDERFIT)") {
+              } else if (project.title === "AI-Powered Health & Fitness Website (BLINDERFIT)") {
                 imagePath = "/blinderfit.png";
               }
               
@@ -199,6 +199,7 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
 
 
 

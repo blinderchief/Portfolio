@@ -21,7 +21,7 @@ const projects: Project[] = [
     title: "AI-Powered Health & Fitness Website (BLINDERFIT)",
     description: "Developing an AI-driven health and fitness Website with personalized nutrition plans and integrations using API.",
     technologies: ["Python", "TensorFlow", "RAG-based Fine-tuning", "React Native", "APIs"],
-    link: "https://blinderfit.vercel.app/"
+    link: "https://blinderfit-live.firebaseapp.com/"
   },
   {
     title: "Sentiment Analysis of Political Tweets",

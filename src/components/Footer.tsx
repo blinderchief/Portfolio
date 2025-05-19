@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container px-6">
         <div className="flex flex-col items-center justify-center">
           <a href="#" className="font-playfair text-2xl font-medium mb-8">
-            blinder<span className="text-primary/80">chief</span>
+            blinderchief
           </a>
           
           <div className="flex flex-wrap justify-center gap-8 mb-10">

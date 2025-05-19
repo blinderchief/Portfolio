@@ -12,13 +12,12 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Programming Languages",
     skills: [
-      "Python", "C++", "Java", "JavaScript", "R"
-    ]
+      "Python", "C++", "Java", "JavaScript"    ]
   },
   {
     title: "Database Management",
     skills: [
-      "MySQL", "SQL", "MongoDB", "Supabase"
+      "MySQL", "SQL", "MongoDB", "Supabase", "Firebase"
     ]
   },
   {
@@ -38,7 +37,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Web Development",
     skills: [
-      "HTML", "CSS", "Django", "JavaScript","APIs"
+      "HTML", "CSS", "JavaScript","APIs"
     ]
   }
 ];
